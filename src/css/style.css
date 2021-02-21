@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: flex;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+}
+
+input::placeholder {
+  color: black;
+  font-weight: 600;
+}
+
+.greetings {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 30vh;
+  font-size: 40px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bkg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+  animation: fadeIn 0.5s linear;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.js-clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 10vh;
+}
+
+.js-clock h1 {
+  margin: 0;
+  font-size: 100px;
+}
+
+.js-clock h3 {
+  margin: 30px 0 0;
+}
+
+.js-weather {
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+  font-weight: 600;
+  text-align: center;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+}
